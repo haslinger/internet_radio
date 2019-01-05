@@ -15,7 +15,7 @@ curses.cbreak()
 stdscr.keypad(1)
 # Standardsender OE1
 os.system ('mplayer -ao alsa ./ansagen/oe1.mp3')
-os.system('mplayer -ao alsa -cache 1024 http://mp3stream3.apasf.apa.at:8000 &')
+os.system('mplayer -ao alsa -cache 1024 -cache-min 80 http://mp3stream3.apasf.apa.at:8000 &')
 # Texthilfe
 pad = curses.newpad(30,10)
 
@@ -37,7 +37,7 @@ while True:
 	elif c == ord('1'):
 		os.system('killall mplayer')
 		os.system ('mplayer -ao alsa ./ansagen/oe1.mp3')
-		os.system('mplayer -ao alsa -cache 1024 http://mp3stream3.apasf.apa.at:8000 &')
+		os.system('mplayer -ao alsa -cache 1024 -cache-min 80 http://mp3stream3.apasf.apa.at:8000 &')
 	elif c == ord('2'):
 		os.system('killall mplayer')
 		os.system ('mplayer -really-quiet -ao alsa ./ansagen/radio_wien.mp3 < /dev/null > /dev/null &')
