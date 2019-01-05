@@ -6,7 +6,7 @@ import sys
 import curses
 
 #Lautstaerke setzen
-volume = 32 
+volume = 100 
 os.system('amixer set Master ' + str(volume))
 # Curses Modus starten
 stdscr = curses.initscr()
