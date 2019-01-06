@@ -50,7 +50,7 @@ while True:
   elif c == ord('2'):
     tune_in('radio_wien', '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
   elif c == ord('y') or c == ord('Y'):
-    tune_in('dlf', 'http://dradio.ic.llnwd.net/stream/dradio_dlf_m_a')
+    tune_in('dlf', '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
   elif c == ord('x') or c == ord('X'):
     tune_in('dw', 'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
   elif c == ord('c') or c == ord('C'):
