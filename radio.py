@@ -46,25 +46,35 @@ while True:
         os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
-    tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
+    tune_in('oe1', 
+            'http://mp3stream3.apasf.apa.at:8000')
   elif c == ord('2'):
-    tune_in('radio_wien', '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
+    tune_in('radio_wien', 
+            '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
   elif c == ord('y') or c == ord('Y'):
-    tune_in('dlf', '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
+    tune_in('dlf', 
+            '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
   elif c == ord('x') or c == ord('X'):
-    tune_in('dw', 'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
+    tune_in('dw', 
+            'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
   elif c == ord('c') or c == ord('C'):
-    tune_in('hr1', 'http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3')
+    tune_in('hr1', 
+            'http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3')
   elif c == ord('v') or c == ord('V'):
-    tune_in('hr2', 'http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3')
+    tune_in('hr2', 
+            'http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3')
   elif c == ord('b') or c == ord('B'):
-    tune_in('hr3', 'http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3')
+    tune_in('hr3', 
+            'http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3')
   elif c == ord('n')  or c == ord('N'):
-    tune_in('hr4', 'http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
+    tune_in('hr4', 
+            'http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
   elif c == ord('m') or c == ord('M'):
-    tune_in('hr_info', 'http://hr-hrinfo-live.cast.addradio.de/hr/hrinfo/live/mp3/128/stream.mp3')
+    tune_in('hr_info', 
+            'http://hr-hrinfo-live.cast.addradio.de/hr/hrinfo/live/mp3/128/stream.mp3')
   elif c == ord(','):
-    tune_in('ndr1_niedersachsen', 'http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1niedersachsen_hi_mp3')
+    tune_in('ndr1_niedersachsen', 
+            'https://ndr-ndr1niedersachsen-hannover.sslcast.addradio.de/ndr/ndr1niedersachsen/hannover/mp3/128/stream.mp3')
   elif c == ord('.'):
     tune_in('mdr_sachsen', '-playlist http://avw.mdr.de/livestreams/mdr1_radio_sachsen_live_128.pls')
   elif c == ord('-'):
