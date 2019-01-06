@@ -60,7 +60,7 @@ while True:
   elif c == ord('b') or c == ord('B'):
     tune_in('hr3', 'http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3')
   elif c == ord('n')  or c == ord('N'):
-    tune_in('hr4', 'http://hr-hr3-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
+    tune_in('hr4', 'http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
   elif c == ord('m') or c == ord('M'):
     tune_in('hr_info', 'http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w71b')
   elif c == ord(','):
