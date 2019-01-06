@@ -54,7 +54,7 @@ while True:
   elif c == ord('x') or c == ord('X'):
     tune_in('dw', 'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
   elif c == ord('c') or c == ord('C'):
-    tune_in('hr1', 'http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w67b')
+    tune_in('hr1', 'http://metafiles.gl-systemhaus.de/hr/hr1_2.m3u')
   elif c == ord('v') or c == ord('V'):
     tune_in('hr2', 'http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w68b')
   elif c == ord('b') or c == ord('B'):
