@@ -48,7 +48,7 @@ while True:
   elif c == ord('1'):
     tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
   elif c == ord('2'):
-    tune_in('radio_wien', 'https://oe2wshoutcast.sf.apa.at/listen.pls')
+    tune_in('radio_wien', '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
   elif c == ord('y') or c == ord('Y'):
     tune_in('dlf', 'http://dradio.ic.llnwd.net/stream/dradio_dlf_m_a')
   elif c == ord('x') or c == ord('X'):
