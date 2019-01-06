@@ -90,15 +90,15 @@ while True:
   elif c == ord('j') or c == ord('J'):
     tune_in('mdr_classic', 'http://mdr-284350-0.cast.mdr.de/mdr/284350/0/mp3/high/stream.mp3')
   elif c == ord('u') or c == ord('U'):
-    tune_in('bayern1', 'http://gffstream.ic.llnwd.net/stream/gffstream_w10b')
+    tune_in('bayern1', 'http://br-br1-obb.cast.addradio.de/br/br1/obb/mp3/128/stream.mp3')
   elif c == ord('i') or c == ord('I'):
-    tune_in('bayern2', 'http://gffstream.ic.llnwd.net/stream/gffstream_w11b')
+    tune_in('bayern2', 'http://br-br2-sued.cast.addradio.de/br/br2/sued/mp3/128/stream.mp3')
   elif c == ord('a') or c == ord('A'):
-    tune_in('bayern3', 'http://gffstream.ic.llnwd.net/stream/gffstream_w12b')
+    tune_in('bayern3', 'http://br-br3-live.cast.addradio.de/br/br3/live/mp3/128/stream.mp3')
   elif c == ord('e') or c == ord('E'):
-    tune_in('bayern4', 'http://gffstream.ic.llnwd.net/stream/gffstream_w13b')
+    tune_in('bayern4', 'http://br-brklassik-live.cast.addradio.de/br/brklassik/live/mp3/128/stream.mp3')
   elif c == ord('o') or c == ord('O'):
-    tune_in('bayern5', 'http://gffstream.ic.llnwd.net/stream/gffstream_w13b')
+    tune_in('bayern5', 'http://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/128/stream.mp3')
   elif c == ord('s') or c == ord('S'):
     tune_in('mdr_info', '-playlist http://avw.mdr.de/livestreams/mdr_info_live_128.pls')
   elif c == ord('n') or c == ord('N'):
