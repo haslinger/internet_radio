@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 # Module importieren
 import os
@@ -32,6 +33,11 @@ pad = curses.newpad(30,10)
 
 while True:
   c = stdscr.getch()
+
+print "====="
+print c
+print "====="
+
 # lauter	
   if c == curses.KEY_RIGHT:
       if volume < 80:
