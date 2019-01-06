@@ -34,13 +34,13 @@ while True:
   if c == curses.KEY_RIGHT:
       if volume < 80:
         volume = volume + 5
-        ansage('lauter.mp3')
+        play('./ansagen/lauter.mp3')
         os.system('amixer set Master ' + str(volume))
 # leister			
   elif c == curses.KEY_DOWN:
       if volume > 0:		
         volume = volume - 5
-        ansage('leiser.mp3')
+        play('./ansagen/leiser.mp3')
         os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
