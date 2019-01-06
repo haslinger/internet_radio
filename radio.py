@@ -23,16 +23,16 @@ while True:
   c = stdscr.getch()
 # lauter	
   if c == curses.KEY_RIGHT:
-      if volume < 64:
-      volume = volume + 5
-      ansage('lauter.mp3')
-      os.system('amixer set Master ' + str(volume))
+      if volume < 80:
+        volume = volume + 5
+        ansage('lauter.mp3')
+        os.system('amixer set Master ' + str(volume))
 # leister			
-  if c == curses.KEY_DOWN:
+  elif c == curses.KEY_DOWN:
       if volume > 0:		
-      volume = volume - 5
-      ansage('leiser.mp3')
-      os.system('amixer set Master ' + str(volume))
+        volume = volume - 5
+        ansage('leiser.mp3')
+        os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
     tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
