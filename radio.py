@@ -71,17 +71,15 @@ while True:
     tune_in('radio_noe', 'mms://radio-noe.streaming.kabsi.at/radio_noe')
   elif c == 195: # Umlauts
     c = stdscr.getch()
-    print "====="
-    print c
-    print "====="
-    tune_in('dlf', 
-            '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
-  elif c == ord('ö') or c == ord('Ö'):
-    tune_in('dw', 
-            'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
-  elif c == ord('ä') or c == ord('Ä'):
-    tune_in('hr1', 
-            'http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3')
+    if c == 188: # ü
+      tune_in('dlf', 
+              '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
+    if c == 182: # ö
+      tune_in('dw', 
+              'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
+    if c == 164: # ä
+      tune_in('hr1', 
+              'http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3')
   elif c == ord('p') or c == ord('P'):
     tune_in('hr2', 
             'http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3')
