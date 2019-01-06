@@ -72,28 +72,23 @@ while True:
     if c == 188: # ü
       tune_in('dlf', '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
     if c == 182: # ö
-      tune_in('antenne_kärnten',  'http://live.antenne.at/as')
+      tune_in('antenne_kärnten', 'http://live.antenne.at/as')
     if c == 164: # ä
       tune_in('hr1', 'http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3')
   elif c == ord('p') or c == ord('P'):
-    tune_in('hr2', 
-            'http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3')
+    tune_in('hr2', 'http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3')
   elif c == ord('z') or c == ord('Z'):
-    tune_in('hr3', 
-            'http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3')
+    tune_in('hr3', 'http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3')
   elif c == ord('b')  or c == ord('B'):
-    tune_in('hr4', 
-            'http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
+    tune_in('hr4', 'http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3')
   elif c == ord('m') or c == ord('M'):
-    tune_in('hr_info', 
-            'http://hr-hrinfo-live.cast.addradio.de/hr/hrinfo/live/mp3/128/stream.mp3')
+    tune_in('hr_info', 'http://hr-hrinfo-live.cast.addradio.de/hr/hrinfo/live/mp3/128/stream.mp3')
   elif c == ord(','):
-    tune_in('ndr1_niedersachsen', 
-            'https://ndr-ndr1niedersachsen-hannover.sslcast.addradio.de/ndr/ndr1niedersachsen/hannover/mp3/128/stream.mp3')
+    tune_in('ndr1_niedersachsen', 'https://ndr-ndr1niedersachsen-hannover.sslcast.addradio.de/ndr/ndr1niedersachsen/hannover/mp3/128/stream.mp3')
   elif c == ord('.'):
-    tune_in('mdr_sachsen', '-playlist http://avw.mdr.de/livestreams/mdr1_radio_sachsen_live_128.pls')
+    tune_in('mdr_sachsen', 'http://avw.mdr.de/streams/284280-0_mp3_high.m3u')
   elif c == ord('j') or c == ord('J'):
-    tune_in('mdr_classic', '-playlist http://avw.mdr.de/livestreams/mdr_klassik_live_128.pls')
+    tune_in('mdr_classic', 'http://avw.mdr.de/streams/284350-0_mp3_high.m3u')
   elif c == ord('u') or c == ord('U'):
     tune_in('bayern1', 'http://gffstream.ic.llnwd.net/stream/gffstream_w10b')
   elif c == ord('i') or c == ord('I'):
