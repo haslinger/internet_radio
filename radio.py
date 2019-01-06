@@ -100,19 +100,17 @@ while True:
   elif c == ord('o') or c == ord('O'):
     tune_in('bayern5', 'http://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/128/stream.mp3')
   elif c == ord('s') or c == ord('S'):
-    tune_in('mdr_aktuell', 'http://avw.mdr.de/streams/284340-0_mp3_high.m3u')
+    tune_in('mdr_aktuell', 'http://mdr-284340-0.cast.mdr.de/mdr/284340/0/mp3/high/stream.mp3')
   elif c == ord('n') or c == ord('N'):
     tune_in('rbb_info', 'http://rbb-inforadio-live.cast.addradio.de/rbb/inforadio/live/mp3/128/stream.mp3')
   elif c == ord('r') or c == ord('R'):
     tune_in('rbb_kultur', 'http://rbb-kulturradio-live.cast.addradio.de/rbb/kulturradio/live/mp3/128/stream.mp3')
   elif c == ord('t') or c == ord('T'):
     tune_in('rbb_radio1', 'http://rbb-radioeins-live.cast.addradio.de/rbb/radioeins/live/mp3/128/stream.mp3')
-  
   elif c == ord('d') or c == ord('D'):
-    tune_in('ndr1_welle_nord', 'http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3')
+    tune_in('ndr1_welle_nord', 'http://ndr-ndr1wellenord-kiel.cast.addradio.de/ndr/ndr1wellenord/kiel/mp3/128/stream.mp3')
   elif c == ord('y') or c == ord('Y'):
-    tune_in('wdr2', 'http://wdr-mp3-m-wdr2-koeln.akacast.akamaistream.net/7/812/119456/v1/gnl.akacast.akamaistream.net/wdr-mp3-m-wdr2-koeln')
-  
+    tune_in('wdr2', 'http://wdr-wdr2-rheinland.icecast.wdr.de/wdr/wdr2/rheinland/mp3/128/stream.mp3')
   elif c == ord('x') or c == ord('X'):
     tune_in('bbc_world_service_for_europe', 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk')
   elif c == ord('v') or c == ord('V'):
