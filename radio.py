@@ -99,6 +99,7 @@ while True:
     tune_in('bayern4', 'http://br-brklassik-live.cast.addradio.de/br/brklassik/live/mp3/128/stream.mp3')
   elif c == ord('o') or c == ord('O'):
     tune_in('bayern5', 'http://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/128/stream.mp3')
+  
   elif c == ord('s') or c == ord('S'):
     tune_in('mdr_info', '-playlist http://avw.mdr.de/livestreams/mdr_info_live_128.pls')
   elif c == ord('n') or c == ord('N'):
@@ -111,26 +112,28 @@ while True:
     tune_in('ndr1_welle_nord', 'http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3')
   elif c == ord('y') or c == ord('Y'):
     tune_in('wdr2', 'http://wdr-mp3-m-wdr2-koeln.akacast.akamaistream.net/7/812/119456/v1/gnl.akacast.akamaistream.net/wdr-mp3-m-wdr2-koeln')
+  
   elif c == ord('x') or c == ord('X'):
-    tune_in('bbc_news', 'http://mp33.bbc.streamuk.com:80/')
+    tune_in('bbc_world_service_for_europe', 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk')
   elif c == ord('v') or c == ord('V'):
-    tune_in('bbc_uk', 'http://mp32.bbc.streamuk.com:80/')
+    tune_in('bbc_uk', 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk')
   elif c == ord('l') or c == ord('L'):
-    tune_in('bbc_radio1' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lc1_radio1_p?s=1324848510&e=1324862910&h=39cf8a445c2808660e0b92d4611d68a8')
+    tune_in('bbc_radio1' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p')
   elif c == ord('c') or c == ord('C'):
-    tune_in('bbc_radio2', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lc1_radio2_p?s=1324848689&e=1324863089&h=d5a1c35aef07079446c6f72d9c961987')
+    tune_in('bbc_radio2', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p')
   elif c == ord('w') or c == ord('W'):
-    tune_in('bbc_radio4', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lc1_radio4_p?s=1324848717&e=1324863117&h=7f5a83962dc491d17ee360c935059bae')
+    tune_in('bbc_radio3', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p')
   elif c == ord('k') or c == ord('K'):
-    tune_in('bbc_radio5' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lc1_5live_p?s=1324848792&e=1324863192&h=b215d7cef4dd16c1da9995d772518812')
+    tune_in('bbc_radio4', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p')
   elif c == ord('h') or c == ord('H'):
-    tune_in('bbc_radio5', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lc1_radio3_p?s=1324848737&e=1324863137&h=aeb3fb200c9ce4802c4c6af3cdc4fe6c')
+    tune_in('bbc_radio5' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p')
   elif c == ord('g') or c == ord('G'):
-    tune_in('radio_ooe', 'http://orfradio.liwest.at/liveLQ.m3u')
+    tune_in('radio_ooe', 'http://orfradio.liwest.at:80/liveHQ')
   elif c == ord('f') or c == ord('F'):
-    tune_in('radio_tirol', 'mms://apasf.apa.at/radio_tirol_worldwide')
+    tune_in('radio_tirol', 'http://str2.creacast.com:80/radiotirol_a')
   elif c == ord('q') or c == ord('Q'):
-    tune_in('radio_vorarlberg', 'mms://apasf.apa.at/radio_vbg_worldwide')	
+    tune_in('radio_vorarlberg', 'http://194.232.200.149:8000/')	
+
 # Wartungsmodus mit PAGE DOWN (d.h. Programm sauber beenden)		
   elif c == curses.KEY_NPAGE:
     os.system('killall mplayer')
