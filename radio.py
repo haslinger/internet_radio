@@ -5,6 +5,14 @@ import os
 import sys
 import curses
 
+def tune_in(text, url):
+  os.system('killall mplayer')
+  play('/.ansagen/%{text}.mp3' % text)
+  play(url)
+
+def play(url):
+  os.system('mplayer -nolirc -ao alsa -cache 128 %{url} > /dev/null 2>&1 &' % url)	
+
 #Lautstaerke setzen
 volume = 50 
 os.system('amixer set Master ' + str(volume))
@@ -28,7 +36,7 @@ while True:
         ansage('lauter.mp3')
         os.system('amixer set Master ' + str(volume))
 # leister			
-  elif c == curses.KEY_DOWN:
+  if c == curses.KEY_DOWN:
       if volume > 0:		
         volume = volume - 5
         ansage('leiser.mp3')
@@ -126,11 +134,3 @@ curses.nocbreak()
 stdscr.keypad(0)
 curses.echo()
 curses.endwin()
-
-def tune_in(text, url):
-  os.system('killall mplayer')
-  play('/.ansagen/%{text}.mp3' % text)
-  play(url)
-
-def play(url):
-  os.system('mplayer -nolirc -ao alsa -cache 128 %{url} > /dev/null 2>&1 &' % url)	
