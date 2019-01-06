@@ -104,7 +104,7 @@ while True:
   elif c == ord('n') or c == ord('N'):
     tune_in('rbb_info', 'http://rbb-inforadio-live.cast.addradio.de/rbb/inforadio/live/mp3/128/stream.mp3')
   elif c == ord('r') or c == ord('R'):
-    tune_in('rbb_kultur', 'http://www.kulturradio.de/live.m3u')
+    tune_in('rbb_kultur', 'http://rbb-kulturradio-live.cast.addradio.de/rbb/kulturradio/live/mp3/128/stream.mp3')
   elif c == ord('t') or c == ord('T'):
     tune_in('rbb_radio1', 'http://rbb-radioeins-live.cast.addradio.de/rbb/radioeins/live/mp3/128/stream.mp3')
   
