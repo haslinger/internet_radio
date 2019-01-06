@@ -36,7 +36,7 @@ while True:
         ansage('lauter.mp3')
         os.system('amixer set Master ' + str(volume))
 # leister			
-  if c == curses.KEY_DOWN:
+  elif c == curses.KEY_DOWN:
       if volume > 0:		
         volume = volume - 5
         ansage('leiser.mp3')
@@ -113,7 +113,6 @@ while True:
   elif c == ord('7'):
     tune_in('radio_burgenland', 'mms://apasf.apa.at/radio_bgl_worldwide')
   elif c == ord('8'):
-    ansage()
     tune_in('radio_steiermark', '-playlist http://mp3stream9.apasf.apa.at:8000/listen.pls')
   elif c == ord('9'):
     tune_in('radio_kaernten', 'mms://apasf.apa.at/radio_kaernten')
