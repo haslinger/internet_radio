@@ -48,27 +48,25 @@ while True:
         os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
-    tune_in('oe1', 
-            'http://mp3stream3.apasf.apa.at:8000')
+    tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
   elif c == ord('2'):
-    tune_in('radio_wien', 
-            '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
+    tune_in('radio_wien', '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
   elif c == ord('3'):
-    tune_in('oe3', 'mms://apasf.apa.at/OE3_Live_Audio')
+    tune_in('oe3', '-playlist http://mp3stream7.apasf.apa.at:8000/listen.pls')
   elif c == ord('4'):
-    tune_in('fm4', 'mms://apasf.apa.at/fm4_live_worldwide')
+    tune_in('fm4', 'http://mp3stream1.apasf.apa.at/;stream.mp3')
   elif c == ord('5'):
-    tune_in('radio_salzburg', 'mms://apasf.apa.at/radio_salzburg')
+    tune_in('radio_salzburg', '-playlist http://194.232.200.147:8000/listen.pls')
   elif c == ord('6'):
-    tune_in('dw', 'http://dw-radio-german-mp3.akacast.akamaistream.net/7/506/135361/v1/gnl.akacast.akamaistream.net/dw-radio-german-mp3')
+    tune_in('radio_oberösterreich', 'http://194.232.200.148:8000/listen.pls')
   elif c == ord('7'):
-    tune_in('radio_burgenland', 'mms://apasf.apa.at/radio_bgl_worldwide')
+    tune_in('radio_burgenland', 'http://194.232.200.146:8000/')
   elif c == ord('8'):
-    tune_in('radio_steiermark', '-playlist http://mp3stream9.apasf.apa.at:8000/listen.pls')
+    tune_in('radio_steiermark', '-playlist http://mp3stream9.apasf.apa.at/')
   elif c == ord('9'):
     tune_in('radio_kaernten', 'mms://apasf.apa.at/radio_kaernten')
   elif c == ord('0'):
-    tune_in('radio_noe', 'mms://radio-noe.streaming.kabsi.at/radio_noe')
+    tune_in('radio_noe', 'http://mp3stream8.apasf.apa.at/')
   elif c == 195: # Umlauts
     c = stdscr.getch()
     if c == 188: # ü
