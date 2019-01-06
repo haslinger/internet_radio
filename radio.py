@@ -23,8 +23,8 @@ curses.noecho()
 curses.cbreak()
 stdscr.keypad(1)
 # Standardsender OE1
-os.system('mplayer -nolirc -ao alsa ./ansagen/oe1.mp3')
-os.system('mplayer -nolirc -ao alsa -cache 128 http://mp3stream3.apasf.apa.at:8000')
+tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
+
 # Texthilfe
 pad = curses.newpad(30,10)
 
