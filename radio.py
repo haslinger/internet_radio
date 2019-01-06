@@ -129,8 +129,8 @@ curses.endwin()
 
 def tune_in(text, url):
   os.system('killall mplayer')
-  play(f'/.ansagen/{text}.mp3')
+  play('/.ansagen/%{text}.mp3' % text)
   play(url)
 
 def play(url)
-  os.system(f'mplayer -really-quiet -nolirc -ao alsa -cache 128 {url} &')	
+  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 %{url} &' % url)	
