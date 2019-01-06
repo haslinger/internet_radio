@@ -7,11 +7,14 @@ import curses
 
 def tune_in(text, url):
   os.system('killall mplayer')
-  play('./ansagen/' + text + '.mp3')
+  ansage(text)
   play(url)
 
 def play(url):
   os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null &')	
+
+def ansage(text):
+  play('~/internet_radio/ansagen/' + text + '.mp3')
 
 #Lautstaerke setzen
 volume = 50 
@@ -33,13 +36,13 @@ while True:
   if c == curses.KEY_RIGHT:
       if volume < 80:
         volume = volume + 5
-        play('./ansagen/lauter.mp3')
+        ansage('lauter')
         os.system('amixer set Master ' + str(volume))
 # leister			
   elif c == curses.KEY_DOWN:
       if volume > 0:		
         volume = volume - 5
-        play('./ansagen/leiser.mp3')
+        ansage('leiser')
         os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
