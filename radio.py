@@ -133,4 +133,4 @@ def tune_in(text, url):
   play(url)
 
 def play(url):
-  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 %{url} &' % url)	
+  os.system('mplayer -nolirc -ao alsa -cache 128 %{url} > /dev/null 2>&1 &' % url)	
