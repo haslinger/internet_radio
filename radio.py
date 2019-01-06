@@ -86,9 +86,9 @@ while True:
   elif c == ord(','):
     tune_in('ndr1_niedersachsen', 'https://ndr-ndr1niedersachsen-hannover.sslcast.addradio.de/ndr/ndr1niedersachsen/hannover/mp3/128/stream.mp3')
   elif c == ord('.'):
-    tune_in('mdr_sachsen', 'http://avw.mdr.de/streams/284280-0_mp3_high.m3u')
+    tune_in('mdr_sachsen', 'http://mdr-284280-0.cast.mdr.de/mdr/284280/0/mp3/high/stream.mp3')
   elif c == ord('j') or c == ord('J'):
-    tune_in('mdr_classic', 'http://avw.mdr.de/streams/284350-0_mp3_high.m3u')
+    tune_in('mdr_classic', 'http://mdr-284350-0.cast.mdr.de/mdr/284350/0/mp3/high/stream.mp3')
   elif c == ord('u') or c == ord('U'):
     tune_in('bayern1', 'http://gffstream.ic.llnwd.net/stream/gffstream_w10b')
   elif c == ord('i') or c == ord('I'):
