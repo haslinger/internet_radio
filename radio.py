@@ -58,11 +58,11 @@ while True:
   elif c == ord('5'):
     tune_in('radio_salzburg', '-playlist http://194.232.200.147:8000/listen.pls')
   elif c == ord('6'):
-    tune_in('radio_oberösterreich', 'http://194.232.200.148:8000/listen.pls')
+    tune_in('radio_oberösterreich', '-playlist http://194.232.200.148:8000/listen.pls')
   elif c == ord('7'):
     tune_in('radio_burgenland', 'http://194.232.200.146:8000/')
   elif c == ord('8'):
-    tune_in('radio_steiermark', '-playlist http://mp3stream9.apasf.apa.at/')
+    tune_in('radio_steiermark', 'http://mp3stream9.apasf.apa.at/')
   elif c == ord('9'):
     tune_in('radio_kaernten', 'mms://apasf.apa.at/radio_kaernten')
   elif c == ord('0'):
