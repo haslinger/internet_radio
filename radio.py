@@ -11,7 +11,6 @@ def tune_in(text, url):
   play(url)
 
 def play(url):
-  print('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null &')
   os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null &')	
 
 #Lautstaerke setzen
