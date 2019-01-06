@@ -99,15 +99,15 @@ while True:
     tune_in('bayern4', 'http://br-brklassik-live.cast.addradio.de/br/brklassik/live/mp3/128/stream.mp3')
   elif c == ord('o') or c == ord('O'):
     tune_in('bayern5', 'http://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/128/stream.mp3')
-  
   elif c == ord('s') or c == ord('S'):
-    tune_in('mdr_info', '-playlist http://avw.mdr.de/livestreams/mdr_info_live_128.pls')
+    tune_in('mdr_aktuell', 'http://avw.mdr.de/streams/284340-0_mp3_high.m3u')
   elif c == ord('n') or c == ord('N'):
-    tune_in('rbb_info', 'http://rbb.ic.llnwd.net/stream/rbb_inforadio_mp3_m_a')
+    tune_in('rbb_info', 'http://rbb-inforadio-live.cast.addradio.de/rbb/inforadio/live/mp3/128/stream.mp3')
   elif c == ord('r') or c == ord('R'):
-    tune_in('rbb_kultur', 'http://rbb.ic.llnwd.net/stream/rbb_kulturradio_mp3_m_a')
+    tune_in('rbb_kultur', 'http://www.kulturradio.de/live.m3u')
   elif c == ord('t') or c == ord('T'):
-    tune_in('rbb_radio1', 'http://rbb.ic.llnwd.net/stream/rbb_radioeins_mp3_m_a')
+    tune_in('rbb_radio1', 'http://rbb-radioeins-live.cast.addradio.de/rbb/radioeins/live/mp3/128/stream.mp3')
+  
   elif c == ord('d') or c == ord('D'):
     tune_in('ndr1_welle_nord', 'http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3')
   elif c == ord('y') or c == ord('Y'):
