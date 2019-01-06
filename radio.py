@@ -7,11 +7,11 @@ import curses
 
 def tune_in(text, url):
   os.system('killall mplayer')
-  play('/.ansagen/%{text}.mp3' % text)
+  play('./ansagen/%{text}.mp3' % text)
   play(url)
 
 def play(url):
-  os.system('mplayer -nolirc -ao alsa -cache 128 %{url} > /dev/null 2>&1 &' % url)	
+  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 %{url} < /dev/null > /dev/null &' % url)	
 
 #Lautstaerke setzen
 volume = 50 
