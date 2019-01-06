@@ -34,10 +34,6 @@ pad = curses.newpad(30,10)
 while True:
   c = stdscr.getch()
 
-  print "====="
-  print c
-  print "====="
-
 # lauter	
   if c == curses.KEY_RIGHT:
       if volume < 80:
@@ -73,7 +69,11 @@ while True:
     tune_in('radio_kaernten', 'mms://apasf.apa.at/radio_kaernten')
   elif c == ord('0'):
     tune_in('radio_noe', 'mms://radio-noe.streaming.kabsi.at/radio_noe')
-  elif c == ord('ü') or c == ord('Ü'):
+  elif c == 195: # Umlauts
+    c = stdscr.getch()
+    print "====="
+    print c
+    print "====="
     tune_in('dlf', 
             '-playlist https://www.deutschlandradio.de/streaming/dlf.m3u')
   elif c == ord('ö') or c == ord('Ö'):
