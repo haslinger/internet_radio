@@ -64,7 +64,7 @@ while True:
   elif c == ord('8'):
     tune_in('radio_steiermark', 'http://mp3stream9.apasf.apa.at/')
   elif c == ord('9'):
-    tune_in('radio_kaernten', 'mms://apasf.apa.at/radio_kaernten')
+    tune_in('radio_kaernten', 'http://194.232.200.145:8000/;stream.nsv')
   elif c == ord('0'):
     tune_in('radio_noe', 'http://mp3stream8.apasf.apa.at/')
   elif c == 195: # Umlauts
