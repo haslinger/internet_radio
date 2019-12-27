@@ -41,7 +41,7 @@ while True:
         ansage('lauter')
         os.system('amixer set Master ' + str(volume))
 # leister			
-  elif c == curses.KEY_DOWN:
+  elif c == curses.KEY_LEFT:
       if volume > 0:		
         volume = volume - 5
         ansage('leiser')
