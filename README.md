@@ -33,7 +33,13 @@ ExecStart=-/sbin/agetty --autologin myusername --noclear %I $TERM
 Type=idle
 ```
 
-# Update script to latest version
+# Update script to latest version and start it
+
+```
+mplayer -really-quiet -nolirc -ao alsa -cache 128 ~/internet_radio/ansagen/senderliste.mp3 < /dev/null > /dev/null
+git -C ~/internet_radio pull origin master
+python ~/internet_radio/radio.py
+```
 
 
 # Tipps:
