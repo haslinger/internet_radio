@@ -12,7 +12,9 @@ def tune_in(text, url):
   play(url)
 
 def play(url):
-  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null &')	
+  # os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null &')
+  # Let's wait for the station intro text to be finished:
+  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 128 ' + url + ' < /dev/null > /dev/null')
 
 def ansage(text):
   play('~/internet_radio/ansagen/' + text + '.mp3')
