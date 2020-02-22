@@ -5,6 +5,7 @@
 import os
 import sys
 import curses
+import time
 
 def tune_in(text, url):
   os.system('killall mplayer')
