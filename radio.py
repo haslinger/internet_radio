@@ -10,7 +10,7 @@ import time
 def tune_in(text, url):
   os.system('killall mplayer')
   ansage(text)
-  time.sleep(2)
+  time.sleep(4)
   play(url)
 
 def play(url):
