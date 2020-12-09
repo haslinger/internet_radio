@@ -52,9 +52,9 @@ while True:
   elif c == ord('1'):
     tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
   elif c == ord('2'):
-    tune_in('radio_wien', '-playlist https://oe2wshoutcast.sf.apa.at/listen.pls')
+    tune_in('radio_wien', 'https://orf-live.ors-shoutcast.at/wie-q1a')
   elif c == ord('3'):
-    tune_in('oe3', '-playlist http://mp3stream7.apasf.apa.at:8000/listen.pls')
+    tune_in('oe3', 'http://orf-live.ors-shoutcast.at/oe3-q2a')
   elif c == ord('4'):
     tune_in('fm4', 'http://mp3stream1.apasf.apa.at/stream.mp3')
   elif c == ord('5'):
@@ -66,7 +66,7 @@ while True:
   elif c == ord('8'):
     tune_in('radio_steiermark', 'http://mp3stream9.apasf.apa.at/')
   elif c == ord('9'):
-    tune_in('radio_kaernten', 'http://194.232.200.145:8000/;stream.nsv')
+    tune_in('radio_kaernten', 'https://orf-live.ors-shoutcast.at/ktn-q1a')
   elif c == ord('0'):
     tune_in('radio_noe', 'http://mp3stream8.apasf.apa.at/')
   elif c == 195: # Umlauts
@@ -100,7 +100,7 @@ while True:
   elif c == ord('e') or c == ord('E'):
     tune_in('bayern4', 'http://br-brklassik-live.cast.addradio.de/br/brklassik/live/mp3/128/stream.mp3')
   elif c == ord('o') or c == ord('O'):
-    tune_in('bayern5', 'http://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/128/stream.mp3')
+    tune_in('bayern5', 'https://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/mid')
   elif c == ord('s') or c == ord('S'):
     tune_in('mdr_aktuell', 'http://mdr-284340-0.cast.mdr.de/mdr/284340/0/mp3/high/stream.mp3')
   elif c == ord('n') or c == ord('N'):
