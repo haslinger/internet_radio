@@ -50,7 +50,7 @@ while True:
         os.system('amixer set Master ' + str(volume))
 # Sender je nach gedrueckter Taste abspielen			
   elif c == ord('1'):
-    tune_in('oe1', 'http://mp3stream3.apasf.apa.at:8000')
+    tune_in('oe1', 'https://orf-live.ors-shoutcast.at/oe1-q1a')
   elif c == ord('2'):
     tune_in('radio_wien', 'https://orf-live.ors-shoutcast.at/wie-q1a')
   elif c == ord('3'):
