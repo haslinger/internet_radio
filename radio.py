@@ -20,7 +20,7 @@ def ansage(text):
   play('~/internet_radio/ansagen/' + text + '.mp3')
 
 #Lautstaerke setzen
-volume = 50 
+volume = 90 
 os.system('amixer set Master ' + str(volume))
 # Curses Modus starten
 stdscr = curses.initscr()
