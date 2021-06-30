@@ -25,7 +25,7 @@ os.system('amixer set Master ' + str(volume))
 # Curses Modus starten
 stdscr = curses.initscr()
 curses.cbreak()
-curses.nl()
+curses.reset_prog_mode()
 stdscr.keypad(True)
 # Standardsender OE1
 tune_in('oe1', 'https://orf-live.ors-shoutcast.at/oe1-q1a')
