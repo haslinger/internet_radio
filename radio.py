@@ -14,7 +14,7 @@ def tune_in(text, url):
   play(url)
 
 def play(url):
-  os.system('mpv --no-input-terminal ' + url)
+  os.system('mpv --no-input-terminal ' + url + ' &')
 
 def ansage(text):
   play('~/internet_radio/ansagen/' + text + '.mp3')
@@ -29,25 +29,22 @@ stdscr.keypad(True)
 # Standardsender OE1
 tune_in('oe1', 'https://orf-live.ors-shoutcast.at/oe1-q1a')
 
-# Texthilfe
-pad = curses.newpad(30,10)
-
 while True:
   c = stdscr.getch()
 
-# lauter	
+  # lauter
   if c == curses.KEY_RIGHT:
-      if volume < 80:
+      if volume < 96:
         volume = volume + 5
         ansage('lauter')
         os.system('amixer set Master ' + str(volume))
-# leister			
+  # leister
   elif c == curses.KEY_LEFT:
-      if volume > 0:		
+      if volume > 0:
         volume = volume - 5
         ansage('leiser')
         os.system('amixer set Master ' + str(volume))
-# Sender je nach gedrueckter Taste abspielen			
+  # Sender je nach gedrueckter Taste abspielen
   elif c == ord('1'):
     tune_in('oe1', 'https://orf-live.ors-shoutcast.at/oe1-q1a')
   elif c == ord('2'):
@@ -131,13 +128,14 @@ while True:
   elif c == ord('f') or c == ord('F'):
     tune_in('radio_tirol', 'http://str2.creacast.com:80/radiotirol_a')
   elif c == ord('q') or c == ord('Q'):
-    tune_in('radio_vorarlberg', 'http://194.232.200.149:8000/')	
+    tune_in('radio_vorarlberg', 'http://194.232.200.149:8000/')
 
-# Wartungsmodus mit PAGE DOWN (d.h. Programm sauber beenden)		
+  # Wartungsmodus mit PAGE DOWN (d.h. Programm sauber beenden)
   elif c == curses.KEY_NPAGE:
-    os.system('killall pmv')
+    os.system('killall mpv')
     break
-# Curses Modus sauber beenden		
+
+# Curses Modus sauber beenden
 curses.nocbreak()
 stdscr.keypad(0)
 curses.echo()
