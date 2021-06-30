@@ -14,7 +14,7 @@ def tune_in(text, url):
   play(url)
 
 def play(url):
-  os.system('mpv ' + url)
+  os.system('mpv --no-input-terminal ' + url)
 
 def ansage(text):
   play('~/internet_radio/ansagen/' + text + '.mp3')
