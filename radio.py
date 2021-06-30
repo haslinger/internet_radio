@@ -8,13 +8,13 @@ import curses
 import time
 
 def tune_in(text, url):
-  os.system('killall mplayer')
+  os.system('killall mpv')
   ansage(text)
   time.sleep(4)
   play(url)
 
 def play(url):
-  os.system('mplayer -really-quiet -nolirc -ao alsa -cache 1024 ' + url + ' < /dev/null > /dev/null &')
+  os.system('mpv ' + url)
 
 def ansage(text):
   play('~/internet_radio/ansagen/' + text + '.mp3')
@@ -136,7 +136,7 @@ while True:
 
 # Wartungsmodus mit PAGE DOWN (d.h. Programm sauber beenden)		
   elif c == curses.KEY_NPAGE:
-    os.system('killall mplayer')
+    os.system('killall pmv')
     break
 # Curses Modus sauber beenden		
 curses.nocbreak()
