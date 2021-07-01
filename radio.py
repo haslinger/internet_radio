@@ -126,7 +126,7 @@ while True:
   elif c == ord('g') or c == ord('G'):
     tune_in('radio_ooe', 'https://orf-live.ors-shoutcast.at/ooe-q1a')
   elif c == ord('f') or c == ord('F'):
-    tune_in('radio_tirol', 'ttps://orf-live.ors-shoutcast.at/tir-q1a')
+    tune_in('radio_tirol', 'https://orf-live.ors-shoutcast.at/tir-q1a')
   elif c == ord('q') or c == ord('Q'):
     tune_in('radio_vorarlberg', 'https://orf-live.ors-shoutcast.at/vbg-q1a')
 
