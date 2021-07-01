@@ -52,19 +52,19 @@ while True:
   elif c == ord('3'):
     tune_in('oe3', 'http://orf-live.ors-shoutcast.at/oe3-q2a')
   elif c == ord('4'):
-    tune_in('fm4', 'http://mp3stream1.apasf.apa.at/stream.mp3')
+    tune_in('fm4', 'https://orf-live.ors-shoutcast.at/fm4-q1a')
   elif c == ord('5'):
-    tune_in('radio_salzburg', '-playlist http://194.232.200.147:8000/listen.pls')
+    tune_in('radio_salzburg', 'https://orf-live.ors-shoutcast.at/sbg-q1a')
   elif c == ord('6'):
-    tune_in('radio_oberösterreich', '-playlist http://194.232.200.148:8000/listen.pls')
+    tune_in('radio_oberösterreich', 'https://orf-live.ors-shoutcast.at/ooe-q1a')
   elif c == ord('7'):
-    tune_in('radio_burgenland', 'http://194.232.200.146:8000/')
+    tune_in('radio_burgenland', 'https://orf-live.ors-shoutcast.at/bgl-q1a')
   elif c == ord('8'):
-    tune_in('radio_steiermark', 'http://mp3stream9.apasf.apa.at/')
+    tune_in('radio_steiermark', 'https://orf-live.ors-shoutcast.at/stm-q1a')
   elif c == ord('9'):
     tune_in('radio_kaernten', 'https://orf-live.ors-shoutcast.at/ktn-q1a')
   elif c == ord('0'):
-    tune_in('radio_noe', 'http://mp3stream8.apasf.apa.at/')
+    tune_in('radio_noe', 'https://orf-live.ors-shoutcast.at/noe-q1a')
   elif c == 195: # Umlauts
     c = stdscr.getch()
     if c == 188: # ü
@@ -88,47 +88,47 @@ while True:
   elif c == ord('j') or c == ord('J'):
     tune_in('mdr_classic', 'http://mdr-284350-0.cast.mdr.de/mdr/284350/0/mp3/high/stream.mp3')
   elif c == ord('u') or c == ord('U'):
-    tune_in('bayern1', 'http://br-br1-obb.cast.addradio.de/br/br1/obb/mp3/128/stream.mp3')
+    tune_in('bayern1', 'https://streams.br.de/bayern1obb_2.m3u')
   elif c == ord('i') or c == ord('I'):
-    tune_in('bayern2', 'http://br-br2-sued.cast.addradio.de/br/br2/sued/mp3/128/stream.mp3')
+    tune_in('bayern2', 'https://streams.br.de/bayern2sued_2.m3u')
   elif c == ord('a') or c == ord('A'):
-    tune_in('bayern3', 'http://br-br3-live.cast.addradio.de/br/br3/live/mp3/128/stream.mp3')
+    tune_in('bayern3', 'https://streams.br.de/bayern3_2.m3u')
   elif c == ord('e') or c == ord('E'):
-    tune_in('bayern4', 'http://br-brklassik-live.cast.addradio.de/br/brklassik/live/mp3/128/stream.mp3')
+    tune_in('bayern4', 'https://streams.br.de/br-klassik_3.m3u')
   elif c == ord('o') or c == ord('O'):
     tune_in('bayern5', 'https://br-b5aktuell-live.cast.addradio.de/br/b5aktuell/live/mp3/mid')
   elif c == ord('s') or c == ord('S'):
     tune_in('mdr_aktuell', 'http://mdr-284340-0.cast.mdr.de/mdr/284340/0/mp3/high/stream.mp3')
   elif c == ord('n') or c == ord('N'):
-    tune_in('rbb_info', 'http://rbb-inforadio-live.cast.addradio.de/rbb/inforadio/live/mp3/128/stream.mp3')
+    tune_in('rbb_info', 'http://www.inforadio.de/live.m3u')
   elif c == ord('r') or c == ord('R'):
-    tune_in('rbb_kultur', 'http://rbb-kulturradio-live.cast.addradio.de/rbb/kulturradio/live/mp3/128/stream.mp3')
+    tune_in('rbb_kultur', 'http://www.rbbkultur.de/live.m3u')
   elif c == ord('t') or c == ord('T'):
-    tune_in('rbb_radio1', 'http://rbb-radioeins-live.cast.addradio.de/rbb/radioeins/live/mp3/128/stream.mp3')
+    tune_in('rbb_radio1', 'http://www.radioeins.de/livemp3')
   elif c == ord('d') or c == ord('D'):
     tune_in('ndr1_welle_nord', 'http://ndr-ndr1wellenord-kiel.cast.addradio.de/ndr/ndr1wellenord/kiel/mp3/128/stream.mp3')
   elif c == ord('y') or c == ord('Y'):
     tune_in('wdr2', 'http://wdr-wdr2-rheinland.icecast.wdr.de/wdr/wdr2/rheinland/mp3/128/stream.mp3')
   elif c == ord('x') or c == ord('X'):
-    tune_in('bbc_world_service_for_europe', 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk')
+    tune_in('bbc_world_service_for_europe', 'https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/dash/nonuk/dash_low/cfs/bbc_world_service.mpd')
   elif c == ord('v') or c == ord('V'):
-    tune_in('bbc_uk', 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk')
+    tune_in('srf4', 'http://stream.srg-ssr.ch/drs4news/mp3_128.m3u')
   elif c == ord('l') or c == ord('L'):
-    tune_in('bbc_radio1' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p')
+    tune_in('bbc_radio1' ,'http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one')
   elif c == ord('c') or c == ord('C'):
-    tune_in('bbc_radio2', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p')
+    tune_in('bbc_radio2', 'http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two')
   elif c == ord('w') or c == ord('W'):
-    tune_in('bbc_radio3', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p')
+    tune_in('bbc_radio3', 'http://stream.live.vc.bbcmedia.co.uk/bbc_radio_three')
   elif c == ord('k') or c == ord('K'):
-    tune_in('bbc_radio4', 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p')
+    tune_in('bbc_radio4', 'http://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm')
   elif c == ord('h') or c == ord('H'):
-    tune_in('bbc_radio5' ,'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p')
+    tune_in('bbc_radio5' ,'https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk')
   elif c == ord('g') or c == ord('G'):
-    tune_in('radio_ooe', 'http://orfradio.liwest.at:80/liveHQ')
+    tune_in('radio_ooe', 'https://orf-live.ors-shoutcast.at/ooe-q1a')
   elif c == ord('f') or c == ord('F'):
-    tune_in('radio_tirol', 'http://str2.creacast.com:80/radiotirol_a')
+    tune_in('radio_tirol', 'ttps://orf-live.ors-shoutcast.at/tir-q1a')
   elif c == ord('q') or c == ord('Q'):
-    tune_in('radio_vorarlberg', 'http://194.232.200.149:8000/')
+    tune_in('radio_vorarlberg', 'https://orf-live.ors-shoutcast.at/vbg-q1a')
 
   # Wartungsmodus mit PAGE DOWN (d.h. Programm sauber beenden)
   elif c == curses.KEY_NPAGE:
@@ -140,3 +140,7 @@ curses.nocbreak()
 stdscr.keypad(0)
 curses.echo()
 curses.endwin()
+
+# Livestreams Bayern: https://www.br.de/unternehmen/inhalt/technik/hilfe-livestreams-br100.html
+# Schweizer Radio Streams: https://www.broadcast.ch/fileadmin/kundendaten/Dokumente/Internet_Streaming/2021_01_links_for_streaming_internet_radio_de_fr_it_V006.pdf
+# Streema: https://streema.com/radios
